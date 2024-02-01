@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя домашня сторінка</title>
+</head>
+<body>
+    <h1>Ласкаво просимо до мого сайту!</h1>
+    <h2>Про програмування</h2>
+    <h3>Про HTML</h3>
+    <h3>Про CSS</h3>
+<!-- додати розрив рядків для наступних 3-х речень -->
+    <p>
+      This is regular text.<br />
+      This is another text after line break.<br />
+      This is another text after line break.<br />
+    </p>
+<!-- форматувати наступні 3 речення як параграфи -->
+    <p> This is a first paragraph. You can add any kind of text here.</p>
+    <p>This is a second paragraph. This is some sample text.</p>
+    <p>This is another paragraph. You can add multiple lines of text in this paragraph.</p>
+<!--navigation-->
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li> <a href="/events">Current Events</a> </li>
+        </ul>
+</nav>
+<!-- Тут має бути елемент заголовка що обгортає елемент заголовка 1 та парвграф. -->
+ <div class="container">
+    <h1>Welcome to...</h1>
+    <p>Це елемент заголовка 1</p>
+ </div>
+<!-- Це початок короткого абзацу. Він має деякі  вкладені теги, щоб підкреслити/виділити частину тексту. Наприклад: -->
+ <p><strong>Це жирний текст.</strong>
+    І, що ще цікавіше:
+    <em>Це курсив!</em>
+ </p>
+<!-- Це розділ, що є базовим контейнером для елементів основного потоку. -->
+ <div>
+    <h3>Це підзаголовок, укладений у теги "h3".</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam optio expedita provident ratione itaque numquam, dolorem, at consequuntur laborum excepturi magnam culpa impedit obcaecati enim dolor totam. Assumenda, vel impedit?</p>
+    <p>Частка тексту<span style="color:#ff0000"> червоного </span>кольору.</p>
+<!-- Тут має бути горизонтальна лінія  -->
+    <hr/>
+    <small>Зменшує розмір шрифта на одиницю по відношенню до розміру звичайного тексту.</small>
+<!-- Цей тег використовується для виділення цитат всередині документа. Тег має атрибут cite -->
+ <blockquote cite="https://www.ukrlib.com.ua/books/printit.php?tid=1052">Но зла Юнона, суча дочка, Розкудкудакалась, як квочка, — Енея не любила — страх; Давно уже вона хотіла, Його щоб душка полетіла К чортам і щоб і дух не пах.</blockquote>
+<!-- Цей тег використовується для виділення коротких цитат.  -->
+ <q>Розкудкудакалась, як квочка, — Енея не любила — страх</q>
+<!-- Цей тег маркує текст как цитату чи примітку на інший матеріал.  -->
+ <p>ІВАН КОТЛЯРЕВСЬКИЙ <cite>ЕНЕЇДА</cite></p>
+<!-- Цей тег дозволяє зберегти оригінальне форматування.  -->
+ <pre>
+    Но зла Юнона, суча дочка,
+    Розкудкудакалась, як квочка, —
+    Енея не любила — страх;
+    Давно уже вона хотіла,
+    Його щоб душка полетіла
+    К чортам і щоб і дух не пах.
+ </pre>
+</div>
+<!--footer-->
+<footer>
+    <div>
+        <p>&copy; 2024 All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
