@@ -1,0 +1,10 @@
+/*main.css*/
+@charset "UTF-8";
+
+@import url(/css/common.css);
+@import url("my-imported-styles.css");
+
+body {
+    color: var(--primary-text-color) ;
+    background: var(--primary-bg-color);
+}

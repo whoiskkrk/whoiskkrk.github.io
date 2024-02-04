@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3 challenges</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <style>
+        p{
+            color: red;
+            background: var(--bgColor);
+        }
+
+        #exciting{
+            background: #f69d3c;
+            border: 1px solid #696969;
+            padding: 10px;
+        }
+
+    </style>
+    <style type="text/css">
+        body {
+            background: var(--bgColor);
+        }
+
+        div {
+            --bgColor: limegreen;
+        }
+    </style>
+</head>
+<body>
+<!--1-->
+    <h2>Сторінка Вікіпедії для мови CSS</h2>
+        <iframe src="https://uk.wikipedia.org/wiki/CSS" title="Сторінка Вікіпедії для мови CSS"></iframe>
+<!--2-->
+    <p style="color: blue;">This is my paragraph.</p>
+    <!--Текст буде синім, оскільки даному тегу р було визначено атрибут style з власним кольором - він є вагомішим-->
+<!--3-->
+    <p style="color: blue;">This is my paragraph.</p>
+    <p>Звичайний, нудний абзац. Намагайтеся не заснути.</p>
+    <p id="exciting">The most exciting paragraph on the page. One of a kind!</p>
+    <div id="exciting1">The most exciting paragraph on the page. One of a kind!</div>
+<!--4-->
+    <div>
+        <h3>Div 1</h3>
+        <p>Paragraph 1</p>
+    </div>
+    <div>
+        <h3>Div 2</h3>
+        <p>Paragraph 2</p>
+    </div>
+   <!--Фон body буде limegreen, бо у конкретному випадку --bgColor є змінною, яку визначено для елементу div-->
+</html>
