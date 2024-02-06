@@ -43,9 +43,10 @@ p.first a {
     color: green;
 }
 
-p > .first > a {
+p .first a {
     color: green;
 }
+
 
 div ~ p {
     color: salmon;
@@ -54,7 +55,7 @@ div ~ p {
 /*6*/
 
 .translucent-box {
-    background: hsl(0deg, 100%, 50%);
+    background: hsla(0deg, 100%, 50%, 0,5)
 }
 
 /*7*/
