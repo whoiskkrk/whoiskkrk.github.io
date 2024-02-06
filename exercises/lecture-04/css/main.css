@@ -1,0 +1,75 @@
+/*main.css*/
+
+/*2*/
+
+h1, h2, h3 {
+    color: gray;
+}
+
+#main {
+    color: #e60202;
+}
+
+.h2 {
+    color: red;
+}
+
+.heading {
+    color: green;
+}
+
+/*3*/
+
+ul > li {
+    font-weight: bold;
+}
+
+section > p {
+    color: red;
+}
+/*Ні, не зміниться. У даному випадку, p є прямим нащадком div, a не section, тому і не змінює колір тексту.*/
+
+section p {
+    font-size: large;
+}
+
+/*4*/
+
+.headings h1:first-of-type + h2 {
+color: indigo;
+}
+
+p.first a {
+    color: green;
+}
+
+p > .first > a {
+    color: green;
+}
+
+
+div ~ p {
+    color: salmon;
+}
+
+
+
+/*6*/
+
+.translucent-box {
+    background: hsl(0deg, 100%, 50%);
+}
+
+/*7*/
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: 140%;
+}
+
+h1 {
+    font-size: 240%;
+}
