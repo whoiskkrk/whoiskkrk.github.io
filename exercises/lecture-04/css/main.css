@@ -47,12 +47,9 @@ p > .first > a {
     color: green;
 }
 
-
 div ~ p {
     color: salmon;
 }
-
-
 
 /*6*/
 
