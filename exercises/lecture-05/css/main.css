@@ -1,0 +1,30 @@
+/*main.css*/
+
+/*3*/
+body {
+    font-size: 16px;
+}
+
+div {
+    font-size: 1.6em;
+}
+
+span {
+    font-size: 1.6em;
+}
+
+span span {
+    font-size: 2.56em;
+}
+
+/*4*/
+
+strong {
+    font-size: 1.6em;
+}
+
+/*5*/
+
+ul {
+    list-style: square; 
+}
