@@ -1,2 +1,2 @@
 # My personal site
-## Kateryna Kriachko
+## Exercises
