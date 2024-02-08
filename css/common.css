@@ -1,6 +1,6 @@
 /*common.css*/
 
-html {
+:root {
     --primary-text-color: #000;
     --primary-bg-color: #fff;
     --primary-font-family: 'Roboto', sans-serif; 
