@@ -1,0 +1,103 @@
+/*main.css lecture 06*/
+
+/*2*/
+
+ul li a:link {
+    color: indigo;
+}
+
+ul li a:visited {
+    color: gold;
+}
+
+ul li a:hover {
+    color: salmon;
+}
+
+ul li a:active {
+    color: red;
+}
+
+ul li a:focus {
+    color: orange;
+}
+
+/*3*/
+
+input:in-range {
+    background-color: rgba(0, 255, 0, 0.25);
+}
+
+input:out-of-range {
+    background-color: rgba(255, 0, 0, 0.25);
+}
+
+/*4*/
+
+.task4 ul li:first-child {
+    color: orange;
+}
+
+/*5*/
+
+.task5 ul :first-of-type {
+    color: orange;
+}
+
+/*6*/
+
+.task6 ul :last-of-type {
+    color: orange;
+}
+
+/*7*/
+
+/*- Встановіть елементу li помаранчевий колір, якщо він не має аргумента class="first-item"*/
+
+.task7 li:not(.first-item) {
+    color: orange;
+}
+
+/*- Встановіть всім елементаи li чорний текст і жовтий фон, крім елемента li з класом .first-item та останнього елемента li у списку*/
+
+.task7 li:not(.first-item):not(:last-of-type) {
+    color: black;
+    background: yellow;
+}
+
+/*8*/
+
+/*- Встановіть дпугому елементу li помаранчевий колір*/
+
+.task8 ol :nth-child(2) {
+    color: orange;
+}
+
+/*- Встановіть кожному парному елементу li помаранчевий колір*/
+
+.task8 ol :nth-child(2n) {
+    color: orange;
+}
+
+/*- Встановіть кожному елементу li помаранчевий колір за фрпмулою 2n+6*/
+.task8 ol :nth-child(2n+6) {
+    color: orange;
+}
+
+/*9*/
+
+h1.ua::before {
+    content: "Слава ";
+}
+
+/*10*/
+
+h1.hero::after {
+    content: " Слава!";
+}
+
+/*11*/
+
+p.cont::before {
+    content: "\0A7";
+}

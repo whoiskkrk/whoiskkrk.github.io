@@ -38,3 +38,25 @@ h2 {
     color: beige;
     background-color: #191970;
 }
+
+h2.text-uppercase {
+    text-transform: uppercase;
+}
+
+.bg-dark {
+    background-color: black;
+}
+
+.text-white {
+    color: white;
+}
+
+.list-unstyled.categories li a {
+    color: indigo;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.list-unstyled.categories li a:hover {
+    background-color: lightgray;
+}
