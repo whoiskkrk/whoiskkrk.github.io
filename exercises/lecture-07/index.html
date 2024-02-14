@@ -3,24 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Homework 07</title>
 
     <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon">
 
     <style>
         .negative {
             background-image: linear-gradient(to left,
-            rgb(135, 206, 235) -50%
-            rgb(70, 130, 180) -10%
-            rgb(96, 130, 182) 0%
-            rgb(0, 71, 171) 100%
+            rgb(135, 206, 235) -50%,
+            rgb(70, 130, 180) -10%,
+            rgb(96, 130, 182) 0%,
+            rgb(0, 71, 171) 100%,
             #191970 150% );
+
+            height: 100px;
+
         }
-        
+
+        .percents {
+            background-image: linear-gradient(to bottom, 
+            rgb(144, 238, 144) 2em,
+            rgb(80, 200, 120) 4em,
+            rgb(0, 163, 108) 8em,
+            rgb(47, 133, 84) 16em,
+            rgb(34, 139, 34) 32em,
+            rgb(0, 128, 0) 64em,
+            #112815 128em );
+
+            height: 100px;
+        }
+
+        .radial {
+            background: radial-gradient(ellipse at top, 
+           #ffa500, transparent), radial-gradient(ellipse at bottom, #ff0000, transparent);
+
+           height: 100px;
+        }
+
     </style>
 </head>
 <body class="body">
     
+    <!--2-->
     <h1>Gradient Text Glow</h1>
     
     <div class="percents">
@@ -34,6 +58,28 @@
     <div class="radial">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
     </div>
-    
+
+    <!--3-->
+    <svg width="300" height="200" xmls="https://www.w3.org/2000/svg">
+        <rect x="20" y="20" width="100" height="100" stroke="#1c87c9" stroke-width="4" fill="lightgray"></rect>
+    </svg>
+
+   <!--4--> 
+   <svg width="200" height="200" xmls="https://www.w3.org/2000/svg">
+    <circle cx="100" cy="70" r="60" stroke="red" stroke-width="4" fill="lightgray"></circle>
+   </svg>
+
+  <!--5-->
+  <svg width="200" height="200" xmls="https://www.w3.org/2000/svg">
+    <circle cx="100" cy="70" r="60" stroke="black" stroke-width="4" fill="beige"></circle>
+    <line id="hours" x1="100" y1="70" x2="160" y2="70" stroke="black" stroke-width="3" fill="#191970"></line>
+    <line id="minutes" x1="100" y1="70" x2="100" y2="10" stroke="black" stroke-width="3" fill="#191970"></line>
+  </svg>
+
+  <!--5-->
+  <svg viewBox="-10 -10 120 120" xmls="https://www.w3.org/2000/svg">
+    <polygon stroke="#fdda0d" fill="#fdda0d" points="50, 0 21, 90 98, 35 2, 35 79, 90"></polygon>
+  </svg>
+
 </body>
 </html>
