@@ -1,0 +1,35 @@
+/*common.css*/
+
+:root {
+    --primary-text-color: #fafafa;
+    --primary-bg-color: #1B1611;
+    --primary-font-family: 'Syne', sans-serif; 
+	--primary-font-size: 0.875rem;
+}
+
+.logo {
+    margin: 10px;
+    padding: 5px;
+    background-color: var(--primary-bg-color);
+
+    #menu {
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+    }
+
+        a {
+            color: var(--primary-text-color);
+            text-transform: uppercase;
+            text-decoration: none;
+            margin-right: 2rem;
+    }
+
+}
+
+
+.img-align {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
