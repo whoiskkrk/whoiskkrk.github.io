@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 08</title>
+
+    <style>
+
+    /*1 padding та margin за допомогою скороченого синтаксу*/
+    .box{ 
+
+        padding: 10px 20px 25px;
+        margin: 25px 20px;
+	}
+
+    /*2 - ширина елемента .box = 324px */
+    .box {
+        
+        width: 300px;
+        padding: 10px;
+        border: dashed 2px green;
+    }
+
+    /*3 - ширина = 256px, висота = 156px*/
+    .first-box {
+
+        width: 200px;
+        height: 100px;
+        border: 8px solid blue;
+        padding: 20px;
+        background: yellow;
+    
+    }
+
+    /*4 - ширина = 216px, висота = 116px */
+    .second-box {
+
+        width: 200px;
+        height: 100px;
+        border: 8px solid blue;
+        background: yellow;
+    
+    }
+
+    /*5 - ширина елемента div = 256px */
+
+    div {
+
+         box-sizing:content-box;
+         width: 200px;
+         border: 8px solid blue;
+         padding: 20px;
+         background: yellow;
+        
+        }
+
+    /*6 - ширина контенту div = 200px - 56px = 144px */
+
+    /*7*/
+    div {
+        
+        border: 10px dotted black;
+        padding: 15px;
+        background: lightblue;
+    }
+    
+    /*7.1. Фон простягається за межі рамки.*/
+        
+    #example1 {
+        
+        background-clip: border-box;
+    }
+
+    /*7.2. Фон простягається за вн. краю рамки.*/
+
+    #example2 {
+
+        background-clip: padding-box;  
+
+    }
+    
+    /*7.3. Фон простягається до краю поля вмісту.*/
+        
+    #example3 {
+        
+        background-clip: content-box;
+        
+    }
+
+    /*8*/
+
+    h1 {
+
+        display: inline-block;
+        width: min-content;
+
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <div class="first-box"></div>
+
+    <div class="second-box"></div>
+
+    <div id="example1">
+        <p>Правило для example1: фон всередині елемента має простягатися за межі рамки.</p>
+    </div>
+    
+    <div id="example2">
+        <p>Правило для example2: фон всередині елемента має простягатися до внутрішнього краю рамки.</p>
+    </div>
+    
+    <div id="example3">
+        <p>Правило для example3: фон всередині елемента має простягатися до краю поля вмісту.</p>
+    </div>
+
+    <h1><span>Awesome article</span></h1>
+
+</body>
+</html>
