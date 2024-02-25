@@ -2,8 +2,10 @@
     --min: 30ch;
 
     display: grid;
+
+    /* gap: 1rem; */
+    align-content: space-between;
     
-    gap: 1rem;
   }
   
   body {
@@ -12,6 +14,7 @@
   }
 
   .card {
+    min-width: 100%;
     grid-template-rows: repeat(auto-fit, minmax (var(--min), 1fr));
     grid-template-columns: auto;
   }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic font-size</title>
+  <style>
+  * {
+    margin: 0;
+  }
+
+  body {
+    color: #000;
+    background: #fff;
+    font-family: Arial, sans-serif;
+    padding: 1em;
+  }
+
+  @media (min-width: 768px) {
+    p {
+      font-size: 16px;
+    }
+  }
+
+/* 
+clamp(20px, -calc-, 36px )
+
+font-size: calc([value-min] + ([value-max] - [value-min]) * ((100vw - [breakpoint-min]) / ([breakpoint-max] -
+[breakpoint-min]))); 
+
+calc(20px + (36px - 20px) * ((100vw - 768px) / (1920px - 768px))); 
+
+calc(20px + 16px * ((100vw - 768px) / 1152px)); 
+
+*/
+
+@media (min-width: 768px)  {
+  p {
+    font-size: clamp(20px, 
+    calc(20px + 16px * ((100vw - 768px) / 1152px)), 36px); 
+  }
+}
+
+  @media (min-width: 1920px) {
+    p {
+      font-size: 48px;
+    }
+  }
+
+  </style>
+
+  <link rel="stylesheet" href="app.css" />
+
+</head>
+
+<body translate="no">
+<p>
+  This text has a font size of 20px at viewport width of 768px and font size of 36px when viewport width is 1920px. But if the viewport width is less than 768px, the font-size won't get lower than 16px and if the viewport width is more than 1920px font size will stop scaling at 48px.
+</p>
+
+</body>
+</html>
