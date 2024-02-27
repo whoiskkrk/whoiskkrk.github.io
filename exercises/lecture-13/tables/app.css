@@ -1,0 +1,47 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+table { 
+    width: 50rem; 
+    border-collapse: collapse; 
+    margin:3rem auto;
+}
+
+
+th { 
+    background-color: indigo;
+    color: white;
+    font-weight: 600;
+} 
+
+td, th { 
+    padding: .625rem;
+    border: 1px solid lightgray;
+    text-align: left;
+    font-size: 1.125rem;
+}
+
+tr:nth-of-type(even) {
+    background-color: lightgray;
+}
+
+@media (max-width: 50rem) {
+
+    table, thead, tbody, th, td, tr { 
+        display: block;
+    }
+       
+    thead tr { 
+        display: none;
+    }
+      
+    tr {
+        border: 1px solid darkgray;
+    }
+      
+    td {
+        border: none;
+        border-bottom: 1px solid lightgray;
+    } 
+}
