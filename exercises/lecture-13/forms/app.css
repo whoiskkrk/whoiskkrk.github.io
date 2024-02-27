@@ -58,7 +58,6 @@ body {
 /* 8 */
 .col-right {
   padding: 3.75rem 1.875rem;
-  margin-left: -10%;
 }
 
 .login-text {
@@ -144,7 +143,7 @@ body {
 .login-form input {
   display: block;
   width: 100%;
-  height: calc((35/16)*1rem);
+  height: calc((30/16)*1rem);
   padding: 0 10px;
   outline: none;
   border: 1px solid gray;
