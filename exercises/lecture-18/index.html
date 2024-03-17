@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework #18</title>
+	
+</head>
+<body>
+
+  - функція checkAge повертає true, якщо параметр age перевищує 18.
+  - в іншому випадку запитує підтвердження та повертає результат:
+ 
+<!-- 1 -->
+ <script>
+
+    //1.1
+    function checkAge(age) {
+      if (age > 18) {
+        return true;
+      }
+        return confirm('Did parents allow you?');
+
+      }     
+  
+    checkAge("22");
+
+      //1.2 - Якщо видалити else, функція працюватиме так само.
+      //1.3 - Різниці немає, бо y будь-якому випадку спрацює confirm, якщо вік буде < 18.
+
+  </script>
+
+  <!-- 2 -->
+  <script>
+
+  //2.1
+  function checkAge(age) {
+    return (age > 18) ? true : confirm('Did parents allow you?');
+  }
+
+  checkAge("16"); //did parent allow you?
+
+  //2.2
+  function checkAge(age) {
+    return age > 18 || confirm('Did parents allow you?'); //3. Дужки необов´язкові.
+  }
+
+  checkAge("21");
+
+  </script>
+
+  <!-- 4 -->
+  <script>
+
+    //4.1
+    function min(a, b) {
+
+      if (a > b) {
+        return b;
+      } else {
+        return a;
+      }
+    }
+
+    //4.2
+    function min(a,b){
+      return (a < b) ? a : b;
+    }
+
+    console.log(min(2, 5)); //2
+    console.log(min(3, -1));//-1
+    console.log(min(1, 1));//1
+
+  </script>
+
+  <!-- 5 -->
+
+  <script>
+
+  function pow(x, n) {
+    if (n === 1) {
+      return x;
+    } else {
+      return x * pow(x, n-1);
+    }
+  }
+
+  let x = parseFloat(prompt("Value for x"));
+  let n = parseFloat(prompt("Value for n"));
+
+  if (n < 1 || !Number.isInteger(n)) {
+    alert("Try again with positive integer.");
+  } else {
+    alert(pow(x, n));
+  }
+
+console.log(pow(3, 2)); //9
+console.log(pow(3, 3)); //27
+console.log(pow(1, 100)); //1
+
+</script>
+
+<!-- 6 -->
+<script>
+
+let ask = (question, yes, no) => {
+   if (confirm(question)) yes();
+   else no();
+}
+
+ask("Does the task complicated for you?",
+ (yes) => alert("It´s okay, you´re learning a new stuff!"),
+ (no) => alert("Cool, go ahead!")
+);
+
+</script>
+
+<!-- 7 -->
+<script>
+
+  let askAgain = function (question, yes, no) {
+    if (confirm(question)) yes();
+    else no();
+  }
+  
+</script>
+
+<!-- 8 -->
+<script>
+
+function A() { 
+  console.log('A was called'); 
+  return undefined;
+}
+
+function B() {
+   console.log('B was called'); 
+   return false;
+}
+function C() { 
+  console.log('C was called'); 
+  return "foo";
+}
+
+//8.1
+console.log(A() ?? C());
+
+//8.2
+console.log(B() || C());
+
+</script>
+
+
+
+
+
+
+
+
