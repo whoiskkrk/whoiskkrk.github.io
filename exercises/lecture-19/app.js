@@ -81,7 +81,8 @@ console.log(greeting(firstName, lastName));
 
 
 //10
-console.log("<div><h1>" + "Hello, " + greeting(firstName, lastName) + "!" + "</h1></div>"); 
+let template = "<div><h1>" + "Hello, " + greeting(firstName, lastName) + "!" + "</h1></div>";
+console.log(template); 
 
 
 //11
