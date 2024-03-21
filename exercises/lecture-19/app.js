@@ -73,15 +73,15 @@ function getFullName (firstName, lastName) {
 
 
 //9
+function greeting(firstName, lastName) {
+    return "Hello, " + getFullName(firstName, lastName) + "!";
+}
 
-greeting = "Hello, " + getFullName(firstName, lastName) + "!";
-console.log(greeting);
+console.log(greeting(firstName, lastName));
 
 
 //10
-
-let template = "<div><h1>" + "Hello, " + getFullName(firstName, lastName) + "!" + "</h1></div>";
-console.log(template); 
+console.log("<div><h1>" + "Hello, " + greeting(firstName, lastName) + "!" + "</h1></div>"); 
 
 
 //11
