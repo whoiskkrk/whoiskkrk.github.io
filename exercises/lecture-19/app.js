@@ -146,10 +146,10 @@ validate("katia22");
 
 
 //16
-const login = /^[a-zA-Z0-9_]+@[a-zA-Z]+\.[a-zA-Z]{3,}$/; 
+const login = /^[a-zA-Z0-9_]+@[a-zA-Z]+\.[a-zA-Z]{2,}$/; 
 
 function valid(email) {
-    const login = /^[a-zA-Z0-9_]+@[a-zA-Z]+\.[a-zA-Z]{3,}$/; 
+    const login = /^[a-zA-Z0-9_]+@[a-zA-Z]+\.[a-zA-Z]{2,}$/; 
 
     let checked = email.match(login);
     if (login.test(email)) {
