@@ -74,8 +74,7 @@ const indexC = change.indexOf('Catwoman');
 const indexJ = change.indexOf('Joker');
 
 if (indexC, indexJ !== -1) {
-    change.splice(indexC, 1, 'Alfred');
-    change.splice(indexJ, 1, 'Alfred');
+    change.splice(1, 2, 'Alfred');
 } 
 
 console.log(change);
