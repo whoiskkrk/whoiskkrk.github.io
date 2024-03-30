@@ -64,8 +64,6 @@ for (let i = 0; i < headers.length; i++) {
             headers[i].querySelector('h1').outerHTML = '<h4 id="' + primaryId + '" class="' + primaryClass + ' ' + classes[i] + '">' + headers[i].querySelector('h1').textContent + '</h4>';
             break;
     }
-
-    headers[i].classList.add(classes[i]);    
 }
 
 console.log(headers);
