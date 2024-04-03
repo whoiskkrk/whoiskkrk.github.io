@@ -1,0 +1,17 @@
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+
+li, ol {
+    text-transform: uppercase;
+}
+
+table {
+    width: 20rem;
+}
+
+th {
+    background-color: blue;
+    color: azure;
+}
+
