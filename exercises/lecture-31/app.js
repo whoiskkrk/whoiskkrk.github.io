@@ -28,6 +28,8 @@ const xhrPromise = (method, url) => {
   return promise;
 };
 
+// console.log(xhrPromise("GET", url))
+
 xhrPromise("GET", url)
 .then(response => {
     const posts = JSON.parse(response)
@@ -36,5 +38,17 @@ xhrPromise("GET", url)
         result += template(item)
     })
     document.getElementById("blog").innerHTML = result;
+    // console.log(result);
     
+})
+
+.then(() => {
+  const users = document.querySelectorAll('.author');
+  users.forEach(user => {
+    xhrPromise('GET', `https://jsonplaceholder.typicode.com/users/${user.dataset.id}`)
+    .then(response => {
+      let userName = JSON.parse(response)
+      user.textContent = userName.name
+    })
+  })
 })
